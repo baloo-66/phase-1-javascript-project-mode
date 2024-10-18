@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple YouTube App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple YouTube App</h1>
+    </header>
+
+    <div id="main-content">
+        <!-- Video List Section -->
+        <div id="video-list">
+            <h2>Available Videos</h2>
+            <div id="videos-container"></div>
+        </div>
+
+        <!-- Video Details Section -->
+        <div id="video-details">
+            <h2>Video Details</h2>
+            <div id="video-info">
+                <h3 id="video-title"></h3>
+                <p id="video-description"></p>
+                <p><strong>Views:</strong> <span id="video-views"></span></p>
+                <div id="video-player">
+                    <video id="video-file" controls></video>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div id="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-container"></div>
+                <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                <button onclick="addComment()">Post Comment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
